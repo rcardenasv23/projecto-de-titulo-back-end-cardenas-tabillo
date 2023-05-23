@@ -1,0 +1,30 @@
+const deletePublicationFile = (deleteFile: Function) => {
+  return async function get(httpRequest: any) {
+    try {
+      const { id_file } = httpRequest.query
+      if (!id_file) {
+        throw new Error('Id not found')
+      }
+      const got = await deleteFile(id_file)
+      return {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        statusCode: 201,
+        body: got,
+      }
+    } catch (e: any) {
+      return {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        statusCode: 400,
+        body: {
+          error: e.message,
+        },
+      }
+    }
+  }
+}
+
+export default deletePublicationFile

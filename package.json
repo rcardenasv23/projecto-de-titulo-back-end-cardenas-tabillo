@@ -1,0 +1,37 @@
+{
+  "name": "projecto-de-titulo-back-end-cardenas-tabillo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://gitlab.com/rodrigo.cardenas.v/projecto-de-titulo-back-end-cardenas-tabillo.git",
+  "author": "Rodrigo Cárdenas Valdivia <rodrigo@trazolabs.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node js/app.js"
+  },
+  "dependencies": {
+    "@google-cloud/local-auth": "2.1.0",
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "googleapis": "105",
+    "jsonwebtoken": "^8.5.1",
+    "nodemailer": "^6.8.0",
+    "pg": "^8.7.3",
+    "randomstring": "^1.2.3",
+    "sequelize": "^6.21.3",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^18.7.3",
+    "@types/pg": "^8.6.5",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "8.7.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "2.5.1",
+    "typescript": "4.4.4"
+  }
+}
